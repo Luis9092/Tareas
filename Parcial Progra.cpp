@@ -1,3 +1,4 @@
+// Luis Fernando Paxel Cojolon        Carne: 1290-20-388   Pacial 1
 #include <stdlib.h>
 #include <iostream>
 #include <conio.h>
@@ -280,7 +281,8 @@ void mostrar_Registro()
     Datos persona;
     int registro = 0;
     fread(&persona, sizeof(Datos), 1, archivo);
-    cout<<("\t\t\t*********   R E G I S T R O    D E   E M P L E A D O S   *******\n\n");
+   gotoxy(30,2); cout<<("*********    R E G I S T R O      D E     E M P L E A D O S   *********");
+   gotoxy(30,3); cout<<("-----------------------------------------------------------------------\n");
     cout << "_____________________________________________________________________________________________________________" << endl;
     cout << "Codigo|"
          << "Nombre\t\t|"

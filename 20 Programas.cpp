@@ -117,7 +117,7 @@ gotoxy(i,0);co(1,242);
 for(int i=45; i <= 120;  i++){
 gotoxy(i,49);co(1,242);
 }
-	}
+}
 
  
 int main(){

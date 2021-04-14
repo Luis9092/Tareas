@@ -153,7 +153,7 @@ void mostrar() {
 	conectar = mysql_init(0);
 	conectar = mysql_real_connect(conectar, "localhost", "CRUD", "terremoto123", "db_mercado", 3306, NULL, 0);
 	gotoxy(20, 2);cout << ("__________________________________________________________________________________");
-	gotoxy(20, 3);cout << ("|                    P A L A B R A S       G U A R D A D A S                      |");
+	gotoxy(20, 3);cout << ("|                   D A T O S              G U A R D A D A S                      |");
 	gotoxy(20, 4);cout << ("|_________________________________________________________________________________|");
 	gotoxy(25,8); cout << "------------ Datos Tabla Puestos ------------" << endl;
 
@@ -184,7 +184,7 @@ conectar = mysql_real_connect(conectar, "localhost", "CRUD", "terremoto123", "db
 if (conectar) {
 	string ID2;
 	gotoxy(20, 2);cout << ("__________________________________________________________________________________");
-	gotoxy(20, 3);cout << ("|                      E L I M I N A R         P A L A B R A                      |");
+	gotoxy(20, 3);cout << ("|                      E L I M I N A R             D A T O S                      |");
 	gotoxy(20, 4);cout << ("|_________________________________________________________________________________|");
 
 	gotoxy(20, 8);cout << "Ingrese el id de la marca que desea eliminar";
@@ -261,7 +261,7 @@ void insertar2() {
 		string Fecha_ingreso = "now()";
 		string producto, Descripcion, Precio_costo, Precio_venta, Existencia, Id_marca;
 		gotoxy(20, 2); cout << ("__________________________________________________________________________________");
-		gotoxy(20, 3); cout << ("|                    I N S E R T A R            P A L A B R A                     |");
+		gotoxy(20, 3); cout << ("|                    I N S E R T A R                D A T O S                     |");
 		gotoxy(20, 4); cout << ("|_________________________________________________________________________________|");
 		cin.ignore();
 		gotoxy(25, 8); cout << "Ingrese producto:";
@@ -318,7 +318,7 @@ void mostrar2() {
 		if (!q_estado) {
 			resultado = mysql_store_result(conectar);
 			gotoxy(20, 2); cout << ("__________________________________________________________________________________");
-			gotoxy(20, 3); cout << ("|                    P A L A B R A S       G U A R D A D A S                      |");
+			gotoxy(20, 3); cout << ("|                    D A T O S             G U A R D A D A S                      |");
 			gotoxy(20, 4); cout << ("|_________________________________________________________________________________|");
 			gotoxy(0, 6); cout << "ID |" << "Producto |" << "Descripcion |" << "Precio costo |" << "Precio Venta |" << "Existencia |      " << "Fecha Ingreso       |" << "Id marca";
 			gotoxy(0, 7); cout << ("----------------------------------------------------------------------------------------------------------------");
@@ -348,7 +348,7 @@ void eliminar2() {
 		gotoxy(20, 2);
 		cout << ("__________________________________________________________________________________");
 		gotoxy(20, 3);
-		cout << ("|                      E L I M I N A R         P A L A B R A                      |");
+		cout << ("|                      E L I M I N A R             D A T O S                      |");
 		gotoxy(20, 4);
 		cout << ("|_________________________________________________________________________________|");
 		gotoxy(25, 10); cout << "Ingrese el Id del producto que desea eliminar :";
